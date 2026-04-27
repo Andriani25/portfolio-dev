@@ -18,17 +18,17 @@ export interface Project {
     images: string[];
 }
 
-import formUspt1 from "../assets/formUspt1.jpeg";
-import formUspt2 from "../assets/formUspt2.jpeg";
-import formUspt3 from "../assets/formUspt3.jpeg";
+import formUspt1 from "../assets/formUspt1.webp";
+import formUspt2 from "../assets/formUspt2.webp";
+import formUspt3 from "../assets/formUspt3.webp";
 
-import cabana1 from "../assets/cabana1.jpeg";
-import cabana2 from "../assets/cabana2.jpeg";
-import cabana3 from "../assets/cabana3.jpeg";
+import cabana1 from "../assets/cabana1.webp";
+import cabana2 from "../assets/cabana2.webp";
+import cabana3 from "../assets/cabana3.webp";
 
-import usptTest1 from "../assets/usptTest1.jpeg";
-import usptTest2 from "../assets/usptTest2.jpeg";
-import usptTest3 from "../assets/usptTest3.jpeg";
+import usptTest1 from "../assets/usptTest1.webp";
+import usptTest2 from "../assets/usptTest2.webp";
+import usptTest3 from "../assets/usptTest3.webp";
 
 export const PROJECTS_DETAILED_DATA: Record<string, Project> = {
     "Formulario de Inscripcion USPT": {

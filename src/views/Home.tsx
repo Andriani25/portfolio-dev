@@ -6,11 +6,11 @@ import { useTheme, useLanguage } from "../context/ContextProvider";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { LanguageToggle } from "../components/LanguageToggle";
 
-import formUspt1 from "../assets/formUspt1.jpeg";
+import formUspt1 from "../assets/formUspt1.webp";
 
-import cabana2 from "../assets/cabana2.jpeg";
+import cabana2 from "../assets/cabana2.webp";
 
-import usptTest3 from "../assets/usptTest3.jpeg";
+import usptTest3 from "../assets/usptTest3.webp";
 
 const PROJECTS_DATA = [
     {
