@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import devImage from '../assets/devImage.webp';
+import devImage from '../assets/devFinalPhoto.webp';
 import { useTheme, useLanguage } from "../context/ContextProvider";
 
 export const AboutMe = () => {
