@@ -9,9 +9,19 @@ export const Footer = () => {
         rights: language === "es"
             ? "Andriani Leandro. Todos los derechos reservados."
             : "Andriani Leandro. All rights reserved.",
-        terms: language === "es" ? "Términos y Servicios" : "Terms and Services",
         madeWith: language === "es" ? "Hecho con" : "Made with",
     };
+
+    const navLinks = [
+        {
+            to: "/terms-and-services",
+            label: language === "es" ? "Términos y Servicios" : "Terms and Services"
+        },
+        {
+            to: "/privacy-policy",
+            label: language === "es" ? "Política de Privacidad" : "Privacy Policy"
+        }
+    ];
 
     return (
         <footer className={`border-t transition-colors duration-300 ${
@@ -22,14 +32,17 @@ export const Footer = () => {
                     © {new Date().getFullYear()} {translations.rights}
                 </p>
                 <div className="flex items-center gap-6">
-                    <Link
-                        to="/terms-and-services"
-                        className={`text-sm transition-colors ${
-                            darkTheme ? "text-blue-400 hover:text-blue-300" : "text-blue-600 hover:text-blue-800"
-                        }`}
-                    >
-                        {translations.terms}
-                    </Link>
+                    {navLinks.map(link => (
+                        <Link
+                            key={link.to}
+                            to={link.to}
+                            className={`text-sm transition-colors ${
+                                darkTheme ? "text-blue-400 hover:text-blue-300" : "text-blue-600 hover:text-blue-800"
+                            }`}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
                     <span className="text-sm">
                         {translations.madeWith} <span className="text-blue-500">♥</span> React & Tailwind
                     </span>
