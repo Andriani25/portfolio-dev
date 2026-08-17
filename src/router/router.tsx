@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Home from "../views/Home";
 import Projects from "../views/Projects";
+import TermsAndServices from "../views/TermsAndServices";
 
 export const router = createBrowserRouter([
     {
@@ -13,5 +14,9 @@ export const router = createBrowserRouter([
             return params.projectName;
         },
         element: <Projects />,
+    },
+    {
+        path: "/terms-and-services",
+        element: <TermsAndServices />,
     },
 ]);

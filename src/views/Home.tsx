@@ -2,6 +2,7 @@ import { AboutMe } from "../components/AboutMe";
 import { CardContainer } from "../components/CardContainer";
 import { SkillsDashboard } from "../components/SkillsDashboard";
 import { Education } from "../components/Education";
+import { Footer } from "../components/Footer";
 import { useTheme, useLanguage } from "../context/ContextProvider";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { LanguageToggle } from "../components/LanguageToggle";
@@ -55,6 +56,7 @@ const Home = () => {
             <SkillsDashboard />
             <CardContainer cards={translatedProjects} />
              <Education />
+             <Footer />
         </main>
     );
 };
